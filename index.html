@@ -10,6 +10,16 @@
             overflow:hidden;
             
         }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: marquee 5s linear infinite;
+        }
         .container{
             display: flex;
             flex-direction: column;
@@ -61,8 +71,11 @@
 </head>
 <body>
     <div class="container">
-       <marquee behavior="infinite" direction="left"><p> Selamat Ulang Tahun Nadya Ananda Maedy yang ke 23</p></marquee>
+            <div class="marquee">
+        Selamat Ulang Tahun Nadya Ananda Maedy yang ke 23
+    </div>
        <div class="card">
+         
            <h1>"Selamat ulang tahun ya cantik panjang umur sehat selalu. semoga dimudahkan segala urusannya, jadi pribadi yang lebih baik lagi, jangan suka emosi, harus banyak banyak sabar. harus banyak ikhlas, yakinlah suatu hari nanti jalannya akan lebih mudah. " </h1>
            <a href="https://github.com/adam-webdev/rumah-sakit">Buka Hadiah >>> </a>
        </div>
